@@ -1,5 +1,6 @@
 // Import necessary packages and files
 import 'package:advicer/3_application/core/services/theme_service.dart';
+import 'package:advicer/3_application/pages/advice/advice_page.dart';
 import 'package:flutter/material.dart';
 import 'package:advicer/theme.dart';
 import 'package:provider/provider.dart';
@@ -25,7 +26,7 @@ class MyApp extends StatelessWidget {
               themeService.isDarkModeOn ? ThemeMode.dark : ThemeMode.light,
           theme: AppTheme.lightTheme, // Light theme
           darkTheme: AppTheme.darkTheme, // Dark theme
-          home: const Placeholder());
+          home: const AdvicerPage());
     });
   }
 }
